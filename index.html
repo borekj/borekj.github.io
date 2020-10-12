@@ -1,0 +1,76 @@
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <meta name="description" content="I’m a description.">
+        <title>Web cartography lesson 1, exercise 1</title>
+    </head> 
+    <style>
+        body {
+            background: #ffffff; font-family:arial; font-size: 14;
+        }
+
+       h1 {
+            font-family:Arial; font-size: 35; text-align:center;
+        }
+    
+        h2 {
+            ; font-family:arial; font-size: 20;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 3px;
+            text-align: center;
+    </style>
+  <body> 
+    
+    
+
+<h1>Zobrazení průměrného zisku etap TT v mapě</h1>
+<p style=text-align:center><strong>Trail Tour</strong> je virtuální běžecká soutěž pořádaná značkou Inov-8. Po celé republice je rozmístěno 50 etap,<br> kde běžci závodí. Svůj výkon nahrávají pomocí GPS hodinek, které poté synchronizují s aplikací Strava,<br>odkud se přes API protokol data přesouvají na server Trailtour. Ten z průměrů prvních třech závodníků <br>spočítá 150 bodů a dopočítává bodový zisk všech dalších. Závodníkům se během celé doby sčítají<br>bodové zisky, které se počítají i do bodové soutěže. Soutěž končí 20.10.2020.
+</p>
+
+<h2>Aktuální pořadí je:</h2>
+
+<table style="width:60%"; style>
+    <tr>
+      <th colspan="2">Muži (počet bodů)</th>
+      <th colspan="2">Ženy (počet bodů)</th>
+      <th colspan="2">Týmy (počet bodů)</th>
+    </tr>
+    <tr>
+      <td>Miloš Nykodým</td>
+      <td>7551.35</td>
+      <td>Natalia Hiklova</td>
+      <td>7216.86</td>
+      <td>SK Žabovřesky Brno</td>
+      <td>124152.06</td>
+    </tr>
+    <tr>
+      <td>Jakub Glonek</td>
+      <td>6989.56</td>
+      <td>Veronika Siebeltová</td>
+      <td>6988.77</td>
+      <td>KOS TESLA Brno</td>
+      <td>123648.45</td>
+    </tr>
+    <tr>
+      <td>Jan Schulhof</td>
+      <td>6798.91</td>
+      <td>Petra Vavříková</td>
+      <td>6988.08</td>
+      <td>SK Kamenice</td>
+      <td>84205.43</td>
+    </tr>
+  </table>
+
+<p style=text-align:center>Každé z etap se zúčastnil jiný počet účastníků, a tedy na ní byl získán jiný počet bodů. Průměrný počet bodů na každou etapu lze zobrazit vhodným kartogramem<br>nebo kartodiagramem. Data z webu <a href="http://www.trailtour.cz/2020">TT</a> lze jednoduše zobrazit, jako ta dělá třeba <a href="https://uustravamaing01.ew.r.appspot.com/uu-strava-maing01/9cb6f576dcb44633b5d7e5afd9384a49/trailtour?year=2020_CZ">tahle</a> nebo <a href="https://trailtour2020.herokuapp.com/home">tahle</a> appka.
+</p>
+<p>Takhle nějak by mohla vypadat mapa: </p>
+  </body>
+</html>
