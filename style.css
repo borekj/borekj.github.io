@@ -4,10 +4,12 @@
     h1 {font-family:Arial; font-size: 35px; text-align:center;}
     h2 {font-family:arial; font-size: 20px; text-align:center;}
     .text{font-family:arial; font-size: 16px; text-align: justify; max-width: 50rem; margin-right: auto; margin-left: auto;}
-    table, th, td {border: 1px solid black; border-collapse: collapse;, text-align: center; max-width: 50rem; margin-right: auto; margin-left: auto;}
+    table, th, td {font-family:arial; border: 1px solid black; border-collapse: collapse;, text-align: center; max-width: 50rem; margin-right: auto; margin-left: auto;}
     th, td {padding: 4px;text-align: center;}
     .spoiler {color: white;}
     .spoiler:hover {color: black;}
     .mapa {display: block; margin-left: auto; margin-right: auto;}
-    .logo {background-size: 100% auto;}
+    .logo {background-size: auto;}
+    .loga img {vertical-align: middle; display: inline-block; padding-top: 4rem;}
+    .loga {text-align: center;}
 </style>
