@@ -35,7 +35,7 @@
      inkscape:window-height="1980"
      inkscape:window-x="3825"
      inkscape:window-y="2"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      units="px" />
   <metadata
      id="metadata5">
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -85,32 +85,6 @@
        d="m -346.98224,328.37201 a 325.05951,55.5625 0 0 1 -324.00285,55.56221 325.05951,55.5625 0 0 1 -326.1093,-55.20098 325.05951,55.5625 0 0 1 321.8827,-55.92109 325.05951,55.5625 0 0 1 328.20197,54.83742" />
     <flowRoot
        xml:space="preserve"
-       id="flowRoot822"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.00012207px;line-height:1.25;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.87123503,0,0,0.87123503,-26.786919,195.28511)"><flowRegion
-         id="flowRegion824"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.00012207px;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
-           id="rect826"
-           width="61.785713"
-           height="84.64286"
-           x="43.214287"
-           y="55.357143"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.00012207px;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
-         id="flowPara828">T</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot822-9"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.00012207px;line-height:1.25;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.87123504,0,0,0.87123504,-11.830977,205.87149)"><flowRegion
-         id="flowRegion824-1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.00012207px;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
-           id="rect826-3"
-           width="61.785713"
-           height="84.64286"
-           x="43.214287"
-           y="55.357143"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.00012207px;font-family:'OCR A Extended';-inkscape-font-specification:'OCR A Extended, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
-         id="flowPara828-1">T</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
        id="flowRoot854"
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
          id="flowRegion856"><rect
@@ -119,7 +93,7 @@
            height="119.5"
            x="-12"
            y="140.5" /></flowRegion><flowPara
-         id="flowPara860"></flowPara></flowRoot>    <text
+         id="flowPara860" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="147.72256"
@@ -131,5 +105,29 @@
          x="147.72256"
          y="236.58191"
          style="stroke-width:0.26458332">2020</tspan></text>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot837"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.7081304,0,0,0.7081304,165.67616,221.5242)"><flowRegion
+         id="flowRegion839"><rect
+           id="rect841"
+           width="57.5"
+           height="50.5"
+           x="-214"
+           y="34.5" /></flowRegion><flowPara
+         id="flowPara843"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">T</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot837-6"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.70813041,0,0,0.70813041,179.55135,233.11908)"><flowRegion
+         id="flowRegion839-9"><rect
+           id="rect841-9"
+           width="57.5"
+           height="50.5"
+           x="-214"
+           y="34.5" /></flowRegion><flowPara
+         id="flowPara843-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">T</flowPara></flowRoot>  </g>
 </svg>
