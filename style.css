@@ -9,5 +9,5 @@
     .spoiler {color: white;}
     .spoiler:hover {color: black;}
     .mapa {display: block; margin-left: auto; margin-right: auto;}
-    .logo {background-size: 100% auto; background-position: center;}
+    .logo {background-size: 100% auto;}
 </style>
