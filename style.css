@@ -1,0 +1,9 @@
+<style>
+    body {background: black; font-family:arial; font-size: 14px;}
+    h1 {font-family:Arial; font-size: 35px; text-align:center;}
+    h2 {font-family:arial; font-size: 20px;}
+    table, th, td {border: 1px solid black; border-collapse: collapse;}
+    th, td {padding: 3px;text-align: center;}
+    .spoiler {color: white;}
+    .spoiler:hover {color: black;}
+</style>
