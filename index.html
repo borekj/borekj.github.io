@@ -6,13 +6,19 @@
         initial-scale=1.0">
         <meta name="Zobrazení TT etap na mapě" content="Zobrazení TT etap na mapě">
         <title>Zobrazení TT etap na mapě</title>
-        <link rel="stylesheet" type="text/css" href="./style.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin="">
+        
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"> 
+        <link rel="stylesheet" type="text/css" href="./style.css">
+
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
+        <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
         <script defer src="script.js"></script>
 
     </head> 
@@ -24,16 +30,19 @@
         <li><a href="#map">Mapa</a></li>
         <li><a href="#odkaz2">Pořadí</a></li>
         <li><a href="#odkaz3">Logo</a></li>
-      </ul>>
+        <li><a href="./seznam_etap.html">Seznam etap</a></li>
+        <li><a href="http://www.trailtour.cz/2020/">Originální web TT</a></li>
+      </ul>
       
-      <h1>Zobrazení průměrného zisku etap TT v mapě</h1>
+      <h1>Zobrazení počtu bodů etap TT v mapě</h1>
+      <br>
       
       <div class="text">
-      <p><strong>Trail Tour</strong> je virtuální běžecká soutěž pořádaná značkou Inov-8. Po celé republice je rozmístěno 50 etap, kde běžci závodí. Svůj výkon nahrávají pomocí GPS hodinek, které poté synchronizují s aplikací Strava,odkud se přes API protokol data přesouvají na server Trailtour. Ten z průměrů prvních třech závodníků ppočítá 150 bodů a dopočítává bodový zisk všech dalších. Závodníkům se během celé doby sčítají bodové zisky, které se počítají i do bodové soutěže. Soutěž končí 20.10.2020.</p>
+      <p><strong>Trail Tour</strong> je virtuální běžecká soutěž pořádaná značkou Inov-8. Po celé republice je rozmístěno 50 etap, kde běžci závodí. Svůj výkon nahrávají pomocí GPS hodinek, které poté synchronizují s aplikací Strava, odkud se přes API protokol data přesouvají na server Trailtour. Ten z průměrů prvních třech závodníků počítá 150 bodů a dopočítává bodový zisk všech dalších. Závodníkům se během celé doby sčítají bodové zisky, které se počítají i do bodové soutěže. Soutěž skončila 20.10.2020.</p>
       </div>
 
-      <h2 id="odkaz2">Aktuální pořadí je (k 20.10.2020):</h2>
-
+      <h2 id="odkaz2">Koncové pořadí</h2>
+      <br>
       <table>
           <tr>
             <th colspan="2">Muži (počet bodů)</th>
@@ -68,15 +77,16 @@
       
       <div class="spoiler"><p>Spoiler: autor se soutěže sám účastní.</p></div>
       <div class="text">
-      <p>Každé z etap se zúčastnil jiný počet účastníků, a tedy na ní byl získán jiný počet bodů. Průměrný počet bodů na každou etapu lze zobrazit      vhodným kartogramem nebo kartodiagramem. Data z webu <a href="http://www.trailtour.cz/2020">TT</a> lze jednoduše zobrazit, jako ta dělá třeba <a      href="https://uustravamaing01.ew.r.appspot.com/uu-strava-maing01/9cb6f576dcb44633b5d7e5afd9384a49/trailtour?year=2020_CZ">tahle</a> nebo <a     href="https://trailtour2020.herokuapp.com/home">tahle</a> appka. Celý projekt bude zveřejněn na <a href="https://borekj.github.io/">této</a> adrese.</p>
+      <p>Každé z etap se zúčastnil jiný počet účastníků, a tedy na ní byl získán jiný počet bodů. Data z webu <a href="http://www.trailtour.cz/2020">TT</a> lze jednoduše zobrazit, jako ta dělá třeba <a href="https://uustravamaing01.ew.r.appspot.com/uu-strava-maing01/9cb6f576dcb44633b5d7e5afd9384a49/trailtour?year=2020_CZ">tahle</a> nebo <a href="https://trailtour2020.herokuapp.com/home">tahle</a> appka. Celý projekt je zveřejněn na <a href="https://borekj.github.io/">této</a> adrese.</p>
 
-      <p>Takhle vypadá mapa etap: </p>
+      <p>Takhle vypadá mapa etap se znázorněnými průměrným počtem bodů: </p>
       </div>
       <div class="map-wrapper">
-      <div id="map"></div>
+        <div id="map"></div>
       </div>
-      <!--V pristim kroku bude doplnen o WFS nebo WMS shapefilu z geoserveru   -->
-
+      <ul class="button">
+        <li><a href="./seznam_etap.html">Textový seznam etap</a></li>
+      </ul>>
       <div class="text" id="odkaz">
       <p>Celkové statistiky Trailtour jsou vskutku impresivní. Závodníci naběhali celkem 72279 kilometrů, 2 255 785 vertikálních metrů a 290 dnů a 17 hodin během 8591 běhů. Jestli je ale jedna kategorie, která se opravdu vyhrotila, tak to byla soutěž českých klubů...
       <input type=checkbox id="show">
@@ -84,7 +94,7 @@
       <u><label for="show" style="color:blue">Pokračovat?</label></u>
         
       <span id="content"><br>
-      <img src="trailtour3.jpg" alt="Fotka běžce" width="1024" height="683" class="vtextu" >Během posledních dvou týdnů spolu totiž zápasily dva brněnské kluby, Žabovřesky Brno a Tesla Brno. Za posledních 10 dnínaběhali (každý) 3000 kilometrů a 10 dní člověkoběhů. Nebylo výjimkou, že někdo naběhal i 80 kilometrů za víkend – v závodním tempuKaždý bod hrál roli. V Tesle (za kterou běhám já) jsme o víkendu vypravili 30 lidí a 8 aut na pražské etapy, Žabiny zase v poslednítýdnu posílaly jedno auto za druhým na krátké etapy na Moravu.  Účastnil se každý, kdo měl nohy, v obou týmech to bylo přes 90 lidíNěkteří dali za posledních 10 dnů třeba 26 etap. Jezdilo se do Sokolova, na Šumavu, do Ústí nad Labem i do Rychlebek. Zkrátka všudekaždý tam, kde mohl ještě přinést nejvíc bodů.<br><br>
+      <img src="trailtour3.jpg" alt="Fotka běžce" width="1024" height="683" class="vtextu" >Během posledních dvou týdnů spolu totiž zápasily dva brněnské kluby, Žabovřesky Brno a Tesla Brno. Za posledních 10 dní naběhaly (každý) 3000 kilometrů a 10 dní člověkoběhů. Nebylo výjimkou, že někdo naběhal i 80 kilometrů za víkend – v závodním tempu. Každý bod hrál roli. V Tesle (za kterou běhám já) jsme o víkendu vypravili 30 lidí a 8 aut na pražské etapy, Žabiny zase v posledním týdnu posílaly jedno auto za druhým na krátké etapy na Moravu. Účastnil se každý, kdo měl nohy, v obou týmech to bylo přes 90 lidí. Někteří dali za posledních 10 dnů třeba 26 etap. Jezdilo se do Sokolova, na Šumavu, do Ústí nad Labem i do Rychlebek. Zkrátka všudem, každý tam, kde mohl ještě přinést nejvíc bodů.<br><br>
       Nebylo vůbec výjimkou vstávat v 5 ráno, ujet za den 700 km v autě a k tomu naběhat maraton během 5 etap za den – něco, co by nám na jařzabralo aspoň tři dny. Poslední etapy se pravidelně běhaly s čelovkami. Nebudu počítat, kolik hektolitrů benzínu se spálilo, ale já sájsem za posledních 10 dní najezdil 3000 a naběhal 210 km. Ekologické? Těžko. Náročné? Určitě. Zábavné? Neskutečně. Motivace konečnněkoho porazit hnala dopředu úplně všechny. Bylo přitom skoro jedno, jestli má člověk za etapu 100 nebo 140 bodů, důležité byla hlavnkvantita.<br><br>
     
       V Tesle jsme nakonec skončili druzí, ale to nám nevadilo. Byla to totiž hlavně neskutečná zábava.

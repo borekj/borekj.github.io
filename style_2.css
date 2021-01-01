@@ -1,0 +1,131 @@
+    html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, img, table {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    body {
+        background: white;
+    }
+    h1 {
+        font-family:Arial;
+        font-size: 35px;
+        text-align:center;
+    }
+    h2 {
+        font-family:arial;
+        font-size: 20px;
+        text-align:center;
+    }
+    
+    table, th, td {
+        font-family:arial;
+        border-bottom: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        max-width: 50rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    th, td {
+        padding: 2px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #4CAA50;
+        color: white;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+    tr:nth-child(even) {background-color: #f2f2f2;}
+
+    .spoiler {
+        color: white;
+    }
+    .spoiler:hover {
+        color: black;
+    }
+    .mapa {
+        display: block;
+        margin-left: auto; 
+        Margin-right: auto;
+        padding-bottom: 1rem;
+    }
+    .logo {
+        width: 100%;
+        height: auto;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .loga img {
+        vertical-align: middle;
+        display: inline-block;
+        padding-top: 2rem;}
+    .minilogo1 {
+        height: auto;
+        width: auto;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .minilogo2 {
+        height: auto;
+        width: auto;
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .map {
+        height: auto;
+        width: auto;
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .loga {
+        text-align: center;
+    }
+    .ofd {
+        color: blue;
+    }
+    #show,#content {
+        display:none;
+    }
+    #show:checked~#content {
+        display:block;
+    }
+    .container {
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        list-style: none;
+        flex-flow: row wrap;
+        margin: 0; 
+
+    }
+    .container > li {
+        background-color: rgb(96, 189, 200);
+        margin: 10px;
+        font-size: 25px;
+        display:block;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    }
+
+    .container > li:hover {
+        background-color: rgb(96, 189, 255);
+    }
+      
+
