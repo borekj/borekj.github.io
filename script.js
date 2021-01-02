@@ -73,7 +73,6 @@ fetch(TT_URL)
 				if (n < 100000) {
 					c += 'small'
 				}
-
 				else if (n < 200000) {
 					c += 'medium'
 				}
@@ -82,7 +81,6 @@ fetch(TT_URL)
 				var text = n + ' bodů'
 				return new L.DivIcon({html: text, 
 				className: 'marker-cluster' + c, iconSize: new L.Point(90, 40) });
-					
 			},
 			
 		});	
@@ -94,34 +92,25 @@ fetch(TT_URL)
 				var loc = "./seznam_etap.html#etapa"+val; 
 				var x = '<a href="' + loc + '">'+MARKER.feature.properties.name_short+'</a>, '+MARKER.feature.properties.Npotints + ' bodů'
 				return x;
-		
 			});
-			
 		
 		LAYERS.addOverlay(TT_CLUSTER, "Mapa etap");
 
 		var legend = L.control({position: 'bottomright'});
-
-	legend.onAdd = function (MAP) {
-
-		var div = L.DomUtil.create('div', 'info legend'),
-			grades = [0, 3, 10, 15, 20],
-			labels = [],
-			from, to;
-
-		for (var i = 0; i < grades.length; i++) {
-			from = grades[i];
-			to = grades[i + 1];
-
-			labels.push(
-				'<i style="background:' + getColor(from + 1) + '"></i> ' +
-				from + (to ? '&ndash;' + to : '+') + ' km');
-		}
-
-		div.innerHTML = labels.join('<br>');
-		return div;
-	};
-
-	legend.addTo(MAP);
-
+		legend.onAdd = function (MAP) {
+			var div = L.DomUtil.create('div', 'info legend'),
+				grades = [0, 3, 10, 15, 20],
+				labels = [],
+				from, to;
+			for (var i = 0; i < grades.length; i++) {
+				from = grades[i];
+				to = grades[i + 1];
+				labels.push(
+					'<i style="background:' + getColor(from + 1) + '"></i> ' +
+					from + (to ? '&ndash;' + to : '+') + ' km');
+				}
+			div.innerHTML = labels.join('<br>');
+			return div;
+			}	
+		legend.addTo(MAP);	
 	});
