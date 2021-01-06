@@ -1,5 +1,14 @@
 'use strict';
 
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+	  x.className += " responsive";
+	} else {
+	  x.className = "topnav";
+	}
+  }
+
 const MAP = L.map('map').setView([49.6, 15.59711], 7);
 const URL_OSM = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const URL_GMAPS = 'https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&scale=2';

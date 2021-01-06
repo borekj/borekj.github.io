@@ -12,6 +12,7 @@
         
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./style.css">
 
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
@@ -26,13 +27,18 @@
 
       <img src="Trailtour_2.jpg" alt="Mapa etap" class="logo" width="1018" height="278">
       <!--obrazek je stazeny primo z jejich webu, bohuzel uz nema vetsi rozliseni. I v originale na webu trailtour.cz to vypada blbe -->
-      <ul class="container">
-        <li><a href="#map">Mapa</a></li>
-        <li><a href="#odkaz2">Pořadí</a></li>
-        <li><a href="#odkaz3">Logo</a></li>
-        <li><a href="./seznam_etap.html">Seznam etap</a></li>
-        <li><a href="http://www.trailtour.cz/2020/">Originální web TT</a></li>
-      </ul>
+      
+      <div class="topnav" id="myTopnav">
+        <a href="#map" class="active">Mapa</a>
+        <a href="#odkaz2">Pořadí</a>
+        <a href="#odkaz3">Logo</a>
+        <a href="./seznam_etap.html">Seznam etap</a>
+        <a href="http://www.trailtour.cz/2020/">Originální web TT</a>  
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
       
       <h1>Zobrazení počtu bodů etap TT v mapě</h1>
       <br>
@@ -43,6 +49,7 @@
 
       <h2 id="odkaz2">Konečné pořadí</h2>
       <br>
+      <div style="overflow-x: auto;">
       <table>
           <tr>
             <th colspan="2">Muži (počet bodů)</th>
@@ -74,6 +81,7 @@
             <td>92048.94</td>
           </tr>
         </table>
+      </div>
       
       <div class="spoiler"><p>Spoiler: autor se soutěže sám účastní.</p></div>
       <div class="text">
@@ -87,15 +95,16 @@
       <div class="text"><p>Z mapy lze rozpoznat poměrně jednoznačný trend - čím kratší (světlejší barva) etapa byla, tím více bodů (větší kroužek) na ní závodníci získali. Pro lidi znalé běhu to asi nebude úplně překvapující, neboť etapy měřící sotva pár kilometrů uběhne skoro každý, zatímco 35km výlet po Rychlebkách už je jen pro neojtrlejší. Podrobnější "statistiky" je možno vidět zde:</p></div>
       <ul class="button">
         <li><a href="./seznam_etap.html">Textový seznam etap</a></li>
-      </ul>>
+      </ul>
       <div class="text" id="odkaz">
       <p>Celkové statistiky Trailtour jsou vskutku impresivní. Závodníci naběhali celkem 72279 kilometrů, 2 255 785 vertikálních metrů a 290 dnů a 17 hodin během 8591 běhů. Jestli je ale jedna kategorie, která se opravdu vyhrotila, tak to byla soutěž českých klubů...
       <input type=checkbox id="show">
         
       <u><label for="show" style="color:blue">Pokračovat?</label></u>
         
-      <span id="content"><br>
-      <img src="trailtour3.jpg" alt="Fotka běžce" width="1024" height="683" class="vtextu" >Během posledních dvou týdnů spolu totiž zápasily dva brněnské kluby, Žabovřesky Brno a Tesla Brno. Za posledních 10 dní naběhaly (každý) 3000 kilometrů a 10 dní člověkoběhů. Nebylo výjimkou, že někdo naběhal i 80 kilometrů za víkend – v závodním tempu. Každý bod hrál roli. V Tesle (za kterou běhám já) jsme o víkendu vypravili 30 lidí a 8 aut na pražské etapy, Žabiny zase v posledním týdnu posílaly jedno auto za druhým na krátké etapy na Moravu. Účastnil se každý, kdo měl nohy, v obou týmech to bylo přes 90 lidí. Někteří dali za posledních 10 dnů třeba 26 etap. Jezdilo se do Sokolova, na Šumavu, do Ústí nad Labem i do Rychlebek. Zkrátka všudem, každý tam, kde mohl ještě přinést nejvíc bodů.<br><br>
+      <span id="content"><img src="trailtour3.jpg" alt="Fotka běžce" width="1024" height="683" class="vtextu" ><br>
+      Během posledních dvou týdnů spolu totiž zápasily dva brněnské kluby, Žabovřesky Brno a Tesla Brno. Za posledních 10 dní naběhaly (každý) 3000 kilometrů a 10 dní člověkoběhů. Nebylo výjimkou, že někdo naběhal i 80 kilometrů za víkend – v závodním tempu. Každý bod hrál roli. V Tesle (za kterou běhám já) jsme o víkendu vypravili 30 lidí a 8 aut na pražské etapy, Žabiny zase v posledním týdnu posílaly jedno auto za druhým na krátké etapy na Moravu. Účastnil se každý, kdo měl nohy, v obou týmech to bylo přes 90 lidí. Někteří dali za posledních 10 dnů třeba 26 etap. Jezdilo se do Sokolova, na Šumavu, do Ústí nad Labem i do Rychlebek. Zkrátka všudem, každý tam, kde mohl ještě přinést nejvíc bodů.<br><br>
+
       Nebylo vůbec výjimkou vstávat v 5 ráno, ujet za den 700 km v autě a k tomu naběhat maraton během 5 etap za den – něco, co by nám na jařzabralo aspoň tři dny. Poslední etapy se pravidelně běhaly s čelovkami. Nebudu počítat, kolik hektolitrů benzínu se spálilo, ale já sájsem za posledních 10 dní najezdil 3000 a naběhal 210 km. Ekologické? Těžko. Náročné? Určitě. Zábavné? Neskutečně. Motivace konečně někoho porazit hnala dopředu úplně všechny. Bylo přitom skoro jedno, jestli má člověk za etapu 100 nebo 140 bodů, důležité byla hlavnkvantita.<br><br>
     
       V Tesle jsme nakonec skončili druzí, ale to nám nevadilo. Byla to totiž hlavně neskutečná zábava.
